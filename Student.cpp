@@ -2,11 +2,12 @@
 #include <iostream>
 
 // Assign studentId and name
-Student::assignDetails() {
-  
+void Student::assignDetails(int sId,char sname) {
+  studentId=sId;
+  strcpy(sname,name);
 }
 
 // Display StudentId and Name
-Student::display() {
-  
+void Student::display() {
+  std::cout<<"Student Details"<<studentId<<name<<std::endl;
 }
